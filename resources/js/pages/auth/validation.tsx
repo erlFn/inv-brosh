@@ -6,14 +6,14 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useLoading } from "@/hooks/use-loading";
-import { home } from "@/routes";
+import user from "@/routes/user";
 
 
 export default function Validation() {
     const { isLoading, setIsLoading } = useLoading();
 
     const handleValidate = () => {
-        router.visit(home.url(), {
+        router.visit(user.dashboard.url(), {
             onStart: () => {
                 setIsLoading(true);
             },
