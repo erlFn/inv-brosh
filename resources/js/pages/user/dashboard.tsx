@@ -3,6 +3,8 @@ import { Head } from "@inertiajs/react";
 import { Loading } from "@/components/loading";
 import { useLoading } from "@/hooks/use-loading";
 
+import AppLayout from "../layouts/app-layout";
+
 export default function Dashboard() {
     const { isLoading } = useLoading();
 
@@ -12,11 +14,11 @@ export default function Dashboard() {
                 title="Dashboard"
             />
             {isLoading && <Loading/>}
-            <div className="min-h-screen w-full flex items-center justify-center transition-opacity duration-750 opacity-100 starting:opacity-0">
+            <AppLayout>
                 <p>
-                    User Dashboard
+                    User dashboard
                 </p>
-            </div>
+            </AppLayout>
         </>
     );
 }
