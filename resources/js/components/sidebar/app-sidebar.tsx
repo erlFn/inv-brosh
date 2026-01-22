@@ -1,8 +1,9 @@
 import React from "react";
 
-import { Sidebar, SidebarContent, SidebarFooter, SidebarGroup, SidebarGroupContent, SidebarGroupLabel, SidebarHeader, SidebarMenu, SidebarMenuButton, SidebarMenuItem } from "../ui/sidebar";
+import { Sidebar, SidebarContent, SidebarFooter, SidebarHeader, SidebarMenu, SidebarMenuButton, SidebarMenuItem } from "../ui/sidebar";
 
 import { AppSidebarHeader } from "./app-sidebar-header";
+import { AppSidebarMain } from "./app-sidebar-main";
 
 
 export function AppSidebar({ ...props } : React.ComponentProps<typeof Sidebar>) {
@@ -14,20 +15,7 @@ export function AppSidebar({ ...props } : React.ComponentProps<typeof Sidebar>) 
                 />
             </SidebarHeader>
             <SidebarContent>
-                <SidebarGroup>
-                    <SidebarGroupLabel>
-                        Test Label
-                    </SidebarGroupLabel>
-                    <SidebarGroupContent>
-                        <SidebarMenuItem>
-                            <SidebarMenuButton>
-                                <p>
-                                    Test Button
-                                </p>
-                            </SidebarMenuButton>
-                        </SidebarMenuItem>
-                    </SidebarGroupContent>
-                </SidebarGroup>
+                <AppSidebarMain/>
             </SidebarContent>
             <SidebarFooter>
                 <SidebarMenu>
