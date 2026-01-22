@@ -16,7 +16,7 @@ export default function Dashboard() {
             {isLoading && <Loading/>}
             <AppLayout>
                 <p>
-                    User dashboard
+                    User dashboardasasd
                 </p>
             </AppLayout>
         </>
