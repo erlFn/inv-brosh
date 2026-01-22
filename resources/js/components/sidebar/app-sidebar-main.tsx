@@ -1,5 +1,4 @@
 import { usePage } from "@inertiajs/react";
-
 import { LayoutDashboard, ClipboardList, PackageOpen, Truck, ShoppingCart } from 'lucide-react';
 
 import { NavItem } from "@/types";
@@ -54,7 +53,7 @@ export default function AppSidebarMain() {
                             >
                                 <SidebarMenuButton
                                     disabled={activePage}
-                                    className={`py-5 transition-all duration-250 ${activePage ? 'shadow-xs border' : 'shadow-none'}`}
+                                    className={`py-5 transition-all duration-250 hover:font-medium ${activePage ? 'shadow-xs border font-medium' : 'shadow-none'}`}
                                 >
                                     {item.icon && (
                                         <item.icon/>
