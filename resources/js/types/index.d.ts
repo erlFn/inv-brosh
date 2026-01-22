@@ -8,6 +8,7 @@ export interface Auth {
 export interface SharedData {
     name: string;
     auth: Auth;
+    sidebarOpen: boolean;
     [key: string]: unknown;
 }
 

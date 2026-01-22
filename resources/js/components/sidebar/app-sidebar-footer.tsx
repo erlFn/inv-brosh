@@ -1,13 +1,15 @@
+import { LogOut } from 'lucide-react';
 import { SidebarMenu, SidebarMenuButton, SidebarMenuItem } from "../ui/sidebar";
 
 export function AppSidebarFooter() {
     return (
         <SidebarMenu>
             <SidebarMenuItem>
-                <SidebarMenuButton className="bg-red-600 hover:bg-red-700 text-white hover:text-white">
-                    <p>
+                <SidebarMenuButton className='py-5 border'>
+                    <LogOut/>
+                    <span>
                         Sign Out
-                    </p>
+                    </span>
                 </SidebarMenuButton>
             </SidebarMenuItem>
         </SidebarMenu>

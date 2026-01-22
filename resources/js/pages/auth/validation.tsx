@@ -1,7 +1,6 @@
 import { Head, router } from "@inertiajs/react";
 import { Send } from 'lucide-react';
 
-import { Loading } from "@/components/loading";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -28,7 +27,6 @@ export default function Validation() {
             <Head
                 title="Verfication"
             />
-            {isLoading && <Loading/> }
             <div className="min-h-screen w-full flex items-center justify-center">
                 <div className="flex flex-col items-center justify-center gap-4">
                     <div className="flex items-center justify-center gap-2">
