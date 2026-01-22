@@ -1,21 +1,17 @@
 import React from "react";
 
-import { Button } from "../ui/button";
 import { Sidebar, SidebarContent, SidebarFooter, SidebarGroup, SidebarGroupContent, SidebarGroupLabel, SidebarHeader, SidebarMenu, SidebarMenuButton, SidebarMenuItem } from "../ui/sidebar";
+
+import { AppSidebarHeader } from "./app-sidebar-header";
+
 
 export function AppSidebar({ ...props } : React.ComponentProps<typeof Sidebar>) {
     return (
         <Sidebar {...props}>
             <SidebarHeader>
-                <SidebarMenu>
-                    <SidebarMenuButton
-                        disabled
-                    >
-                        <p>
-                            Test
-                        </p>        
-                    </SidebarMenuButton>
-                </SidebarMenu>
+                <AppSidebarHeader
+                    title="Test Inventory"
+                />
             </SidebarHeader>
             <SidebarContent>
                 <SidebarGroup>
